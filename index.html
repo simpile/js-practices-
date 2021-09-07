@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+    <title>jsPractice</title>
+
+</head>
+
+<body >
+    <div >
+        <label  class="changeLang">
+          <input onclick="myChangeLang()" type="checkbox">
+          <span  class="changeLangBtn"></span>
+        </label>
+        <p id="myLang">fa </p>   
+
+    <div class="myContainer" id="miladi">
+        <h1>How old are you?</h1>
+        <div class="d-flex m-5">
+          <label for="year">Enter your year of birth 
+            <input id="myYear" name="year" placeholder="exp:1991"></label>
+            <button id="myBtn" class="btn btn-info text-light" onclick="myDetect()">what's you age?</button>
+        </div>
+    </div>
+
+    <div class="myContainer" id="shamsi">
+      <h1>چند سالته؟</h1>
+      <div class="d-flex m-5">
+        <label for="parsYear">سال تولد خود را وارد کنید 
+          <input id="myParsYear" name="parsYear" placeholder="مثال: 1370"></label>
+          <button id="myParsBtn" class="btn btn-info text-light" onclick="myDetect2()">چند سالته؟</button>
+      </div>
+  </div>
+
+
+
+    <script src="script.js" > </script>
+ 
+</body>
+
+</html>
