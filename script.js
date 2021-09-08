@@ -24,8 +24,10 @@ function myDetect() {
     var myYear = document.getElementById("myYear").value;
     var thisYear = new Date().getFullYear();
     var theAge= thisYear - myYear
-  alert( "you are  " + theAge +"  years old")
-
+    if(myYear=null || myYear ==! Number || myYear.length < 4) {alert(" the input coldn't be emty")}
+   else{
+  alert( "you are  " + theAge +"  years old")}
+  
 }
 // submit with enter key
 var input = document.getElementById("myYear");
@@ -39,12 +41,14 @@ input.addEventListener("keyup", function (event) {
 
 
 function myDetect2(){
-    var date= new Date(1400,01,01,0)
-    var myYear = document.getElementById("myParsYear").value;
-    var thisYear = date.getFullYear();
-    var theAge= thisYear - myYear
-  alert( "شما  " + theAge +"  سالتونه")
-
+    var parsDate= new Date(1400,06,16,0)
+    var myParsYear = document.getElementById("myParsYear").value;
+    var thisParsYear = parsDate.getFullYear();
+    var theParsAge= thisParsYear - myParsYear
+ 
+    if(myParsYear=null || myParsYear ==! Number || myParsYear.length < 4) {alert(" نمیتواند خالی باشد")}
+   else{ alert( "شما  " + theParsAge +"  سالتونه")
+  }
 }
 
 // submit with enter key
